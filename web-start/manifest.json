@@ -1,0 +1,7 @@
+{
+  "name": "In-Credible",
+  "short_name": "Credible",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary"
+}

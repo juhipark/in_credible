@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Crowdfunding platform service that provides accredible authors anonymous initial funding">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InCredible Crowfunding</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+ 
+  <!-- App Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <!-- Header section containing logo -->
+  <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+      <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+          <h3><i rel="shortcut icon" href="./favicon.ico"> InCredible</h3>
+      </div>
+      <div id="user-container">
+        <div hidden id="user-pic"></div>
+        <div hidden id="user-name"></div>
+        <button hidden id="sign-out" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+          Sign-out
+        </button>
+        <button id="sign-in">
+          <i class="material-icons">account_circle</i>Sign-in with Google
+        </button>
+      </div>
+    </div>
+  </header>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC3Q2B2PBTV1u422nQi10wkq5g1xY6zQy4",
+    authDomain: "in-credible-953d1.firebaseapp.com",
+    databaseURL: "https://in-credible-953d1.firebaseio.com",
+    projectId: "in-credible-953d1",
+    storageBucket: "in-credible-953d1.appspot.com",
+    messagingSenderId: "400853116182"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<script src="/__/firebase/5.5.7/firebase-app.js"></script>
+<script src="/__/firebase/5.5.7/firebase-auth.js"></script>
+<script src="/__/firebase/5.5.7/firebase-database.js"></script>
+<script src="/__/firebase/5.5.7/firebase-storage.js"></script>
+<script src="/__/firebase/5.5.7/firebase-messaging.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<script src="/Users/juhi/Documents/firebase_sample/in_credible/web-start/scripts/main.js"></script>
+<script type="text/javascript">
+var signInButtonElement = document.getElementById('sign-in');
+
+signInButtonElement.addEventListener('click', signIn);
+
+function signIn() {
+  // Sign in Firebase using popup auth and Google as the identity provider.
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider);
+}
+
+// Signs-out 
+function signOut() {
+  // Sign out of Firebase.
+  firebase.auth().signOut();
+}
+
+</script>
+<h3>HELLO WORLD</h3>
+</body>
+</html>
