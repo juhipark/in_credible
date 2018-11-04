@@ -38,21 +38,27 @@
   <main>
     <div class="container">
         <div class="item">
-            <div id="profile">Hello</div>
+            <div class="profile" onclick="myProfile()">Click me
+                <span class="popuptext" id="myPopup">The Best Biography ever! I am so great!</span>
+            </div>
               <article onclick="window.open('sample.html','_blank')">
                 <h1>Google Chrome</h1>
                 <p>Google Chrome is a free, open-source web browser developed.</p>
               </article>
             </div> 
         <div class="item">
-            <div id="profile">Hello</div>
+            <div class="profile" onclick="myProfile()">Click me
+                <span class="popuptext" id="myPopup">The Best Biography ever! I am so great!</span>
+            </div>
               <article onclick="window.open('sample.html','_blank')">
                 <h1>Problem with Google Chrome?</h1>
                 <p>Google Chrome is a free, open-source web browser developed.</p>
               </article>
             </div> 
         <div class="item">
-            <div id="profile">Hello</div>
+            <div class="profile" onclick="myProfile()">Click me
+                <span class="popuptext" id="myPopup">The Best Biography ever! I am so great!</span>
+            </div>
               <article onclick="window.open('sample.html','_blank')">
                 <h1>Google Chrome</h1>
                 <p>Google Chrome is a free, open-source web browser developed.</p>
@@ -88,6 +94,10 @@
 <script type="text/javascript">
 <!-- grid articles -->
 
+function myProfile() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
 
 
 var userPicElement = document.getElementById('user-pic');
