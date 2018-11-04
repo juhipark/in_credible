@@ -12,7 +12,7 @@
   <!-- Web Application Manifest -->
   <link rel="manifest" href="manifest.json">
 
- 
+
   <!-- App Styling -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="styles/main.css">
@@ -26,6 +26,24 @@
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
           <h3>InCredible</h3>
+          <style type="text/css">
+            dummydeclaration { padding-left: 4em; } /* Firefox ignores first declaration for some reason */
+            tab1 { padding-left: 1.5em; }
+            tab2 { padding-left: 3em; }
+            tab3 { padding-left: 4.5em; }
+            tab4 { padding-left: 6em; }
+          </style>
+          <form>
+            <fieldset>
+              <legend>Search</legend>
+              <p>
+                <a href="https://www.cosmopolitan.com/lifestyle/advice/g1738/luxury-gifts-women/"><tab1>Enviornment</tab1> </a>
+                <a href="https://www.nytimes.com/section/politics"><tab2>Politics</tab2> </a>
+                <a href="https://www.cnn.com/health"><tab3>Health</tab3> </a>
+                <a href="https://www.sciencenews.org/"><tab4>Science</tab4> </a>
+              </p>
+            </fieldset>
+          </form>
       </div>
       <div id="user-container">
         <div hidden id="user-pic"></div>
@@ -38,29 +56,43 @@
   <main>
     <div class="container">
         <div class="item">
-            <div class="profile" onclick="myProfile()">Click me
-                <span class="popuptext" id="myPopup">The Best Biography ever! I am so great!</span>
+            <div class="profile" onclick="myProfile()">
+              <img src="images/image1.jpg" style="width:100px;height:100px;"/>
+                <span class="popuptext" id="myPopup" style="width:500;height:500;">
+                  <img src="images/image1.jpg" style="width:100px;height:100px;"/>
+                    <section align="right"> -Born: April 20, 1996 </section>
+                </span>
             </div>
               <article onclick="window.open('sample.html','_blank')">
-                <h1>Google Chrome</h1>
+                <var> Politics</var>
+                <var> November 3, 2018</var>
+                <h1>Can we Develop Immunity Against Fake News?</h1>
+
+                <!--<a href="https://www.pri.org/stories/2017-02-11/can-we-develop-immunity-against-fake-news">Can We Develop Immunity Against Fake News?</a>-->
                 <p>Google Chrome is a free, open-source web browser developed.</p>
               </article>
-            </div> 
+            </div>
         <div class="item">
-            <div class="profile" onclick="myProfile()">Click me
-                <span class="popuptext" id="myPopup">The Best Biography ever! I am so great!</span>
+            <div class="profile" onclick="myProfile()">
+              <img src="images/image2.jpg" style="width:100px;height:100px;"/>
+                <span class="popuptext" id="myPopup">
+                  <img src="images/image2.jpg" style="width:100px;height:100px;"/>
+                  <var align="Right"> -Born: December 12, 1985 </var>
+
+                </span>
             </div>
               <article onclick="window.open('sample.html','_blank')">
-                <h1>Problem with Google Chrome?</h1>
+                <h1>Biologist Gain New Insights Into the Surface Life and Acoustics of Right Whales</h1>
                 <p>Google Chrome is a free, open-source web browser developed.</p>
               </article>
-            </div> 
+            </div>
         <div class="item">
-            <div class="profile" onclick="myProfile()">Click me
+            <div class="profile" onclick="myProfile()">
+              <img src="images/image3.jpg" style="width:150px;height:100px;"/>
                 <span class="popuptext" id="myPopup">The Best Biography ever! I am so great!</span>
             </div>
               <article onclick="window.open('sample.html','_blank')">
-                <h1>Google Chrome</h1>
+                <h1>The Kelp Forest of Our Oceans Are Dying</h1>
                 <p>Google Chrome is a free, open-source web browser developed.</p>
               </article>
             </div>
@@ -126,7 +158,7 @@ function signInAuthor() {
   provider = new firebase.auth.GoogleAuthProvider();
   //firebase.auth().signInWithPopup(provider);
     firebase.auth().signInWithPopup(provider).then((user)=>{
-       
+
     window.location.href = "author_submission.html";
     }).catch(function(error) {
 	    console.log(error);

@@ -13,7 +13,7 @@ main, #container {
     background-color: #fef1ee;
     border: 1px solid #fff;
     padding: 40px;
-    font-size: 30px;
+    font-size: 14px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -30,6 +30,7 @@ main, #container {
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
+
 }
 
 /* Popup arrow */
@@ -51,7 +52,7 @@ main, #container {
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
+    from {opacity: 0;}
     to {opacity: 1;}
 }
 
