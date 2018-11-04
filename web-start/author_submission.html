@@ -34,15 +34,15 @@
         <p>
           <label>Expected Publishing Date: </label>
           <input type = "text"
-                 id = "month_text"
+                 id = "month_pub"
                  value = "Month"
                  size="5" /> /
           <input type = "text"
-                 id = "day_text"
+                 id = "day_pub"
                  value = "Day"
                  size="5"/> /
           <input type = "text"
-                 id = "year_text"
+                 id = "year_pub"
                  value = "Year"
                  size="5" />
         </p>
@@ -59,24 +59,80 @@
         <p>
           <label>Funding Expiration: </label>
           <input type = "text"
-                 id = "month_text"
+                 id = "month_exp"
                  value = "Month"
                  size="5" /> /
           <input type = "text"
-                 id = "day_text"
+                 id = "day_exp"
                  value = "Day"
                  size="5"/> /
           <input type = "text"
-                 id = "year_text"
+                 id = "year_exp"
                  value = "Year"
                  size="5" />
         </p>
       </fieldset>
       <p>
-        <a href="index.html">
-          <input type = "button" value="Submit"/>
-        </a>
-      </p>
+      <input type = "submit" value="Submit" onclick="return updateData()"/>
+    </p>
     </form>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC3Q2B2PBTV1u422nQi10wkq5g1xY6zQy4",
+    authDomain: "in-credible-953d1.firebaseapp.com",
+    databaseURL: "https://in-credible-953d1.firebaseio.com",
+    projectId: "in-credible-953d1",
+    storageBucket: "in-credible-953d1.appspot.com",
+    messagingSenderId: "400853116182"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="/__/firebase/5.5.7/firebase-app.js"></script>
+<script src="/__/firebase/5.5.7/firebase-auth.js"></script>
+<script src="/__/firebase/5.5.7/firebase-database.js"></script>
+<script src="/__/firebase/5.5.7/firebase-storage.js"></script>
+<script src="/__/firebase/5.5.7/firebase-messaging.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+    <script type="text/javascript">
+        var database = firebase.database();
+        //var userName = getUserName();
+
+        function updateData(){
+            var articles = firebase.database().ref('articles');
+            var category = document.getElementById('myList').value;
+            var title = document.getElementById('proposal').value;
+            var descript = document.getElementById('textArea').value;
+            var publishDate = document.getElementById('month_pub').value;
+            publishDate += '.'+ document.getElementById('day_pub').value;
+            publishDate += '.'+ document.getElementById('year_pub').value;
+            var goalAmount = document.getElementById('money').value;
+            var expireDate =  document.getElementById('month_exp').value;
+            expireDate += '.' + document.getElementById('day_exp').value;
+            expireDate += '.' + document.getElementById('year_exp').value;
+            //alert('Posted succesfully!');
+            articles.push({
+                'category': category, 
+                'title': title,
+                'description': descript,
+                'publishDate': publishDate,
+                'goalAmount': goalAmount,
+                'expireDate': expireDate
+            });
+            redirect();
+            return false;
+        }
+        function redirect(){
+            if(!alert('Posted successfully!')) {
+                window.location.href = "index.html";
+            }
+            return false;
+        }
+                
+    </script>
+
   </body>
 </html>

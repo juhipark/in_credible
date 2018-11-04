@@ -1,25 +1,25 @@
-[debug] [2018-11-04T18:06:09.064Z] ----------------------------------------------------------------------
-[debug] [2018-11-04T18:06:09.067Z] Command:       /Users/eeelizabeth/.nvm/versions/node/v11.1.0/bin/node /Users/eeelizabeth/.nvm/versions/node/v11.1.0/bin/firebase serve --only hosting
-[debug] [2018-11-04T18:06:09.067Z] CLI Version:   6.0.1
-[debug] [2018-11-04T18:06:09.067Z] Platform:      darwin
-[debug] [2018-11-04T18:06:09.067Z] Node Version:  v11.1.0
-[debug] [2018-11-04T18:06:09.068Z] Time:          Sun Nov 04 2018 10:06:09 GMT-0800 (Pacific Standard Time)
-[debug] [2018-11-04T18:06:09.068Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-11-04T18:06:09.080Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-11-04T18:06:09.081Z] > authorizing via signed-in user
-[debug] [2018-11-04T18:06:09.081Z] [iam] checking project in-credible-40410 for permissions ["firebase.projects.get"]
-[debug] [2018-11-04T18:06:09.084Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-40410:testIamPermissions  
+[debug] [2018-11-04T21:21:40.212Z] ----------------------------------------------------------------------
+[debug] [2018-11-04T21:21:40.214Z] Command:       /usr/local/Cellar/node/7.7.1_1/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2018-11-04T21:21:40.214Z] CLI Version:   6.0.1
+[debug] [2018-11-04T21:21:40.215Z] Platform:      darwin
+[debug] [2018-11-04T21:21:40.215Z] Node Version:  v7.7.1
+[debug] [2018-11-04T21:21:40.215Z] Time:          Sun Nov 04 2018 13:21:40 GMT-0800 (PST)
+[debug] [2018-11-04T21:21:40.215Z] ----------------------------------------------------------------------
+[debug]
+[debug] [2018-11-04T21:21:40.227Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-04T21:21:40.227Z] > authorizing via signed-in user
+[debug] [2018-11-04T21:21:40.227Z] [iam] checking project in-credible-953d1 for permissions ["firebase.projects.get"]
+[debug] [2018-11-04T21:21:40.229Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-953d1:testIamPermissions
 
-[debug] [2018-11-04T18:06:09.362Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-04T18:06:09.365Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-40410  
- 
-[debug] [2018-11-04T18:06:09.609Z] <<< HTTP RESPONSE 200
-[info] 
+[debug] [2018-11-04T21:21:40.688Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-04T21:21:40.690Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-953d1
+
+[debug] [2018-11-04T21:21:40.961Z] <<< HTTP RESPONSE 200
+[info]
 [info] === Serving from '/Users/eeelizabeth/Desktop/hackathon2018/in_credible/web-start'...
-[info] 
-[debug] [2018-11-04T18:06:09.613Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/764715942336/clients/_:getWebAppConfig  
- 
-[debug] [2018-11-04T18:06:09.880Z] <<< HTTP RESPONSE 200
+[info]
+[debug] [2018-11-04T21:21:40.964Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/400853116182/clients/_:getWebAppConfig  
+
+[debug] [2018-11-04T21:21:41.427Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
 [info] ✔  hosting: Local server: http://localhost:5000
