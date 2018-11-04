@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>User</title>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>User Proposal</h1>
+    <form>
+      <fieldset>
+        <legend>Tell us about your proposal!</legend>
+        <p>
+             <label>Category: </label>
+             <select id = "myList">
+               <option value = "1">Select One</option>
+               <option value = "2">Enviornment</option>
+               <option value = "3">Science</option>
+               <option value = "4">Politics</option>
+               <option value = "5">Health</option>
+             </select>
+          </p>
+        <p>
+          <label>Proposal Title: </label>
+          <input type = "text"
+                 id = "proposal"
+                 value = "Title"
+                 size="35" />
+        </p>
+        <p>
+          <label>Description: </label>
+          <textarea id = "textArea" cols = "35" rows = "10">Provide a brief description of what you plan to discuss in your article.
+          </textarea>
+        </p>
+        <p>
+          <label>Expected Publishing Date: </label>
+          <input type = "text"
+                 id = "month_text"
+                 value = "Month"
+                 size="5" /> /
+          <input type = "text"
+                 id = "day_text"
+                 value = "Day"
+                 size="5"/> /
+          <input type = "text"
+                 id = "year_text"
+                 value = "Year"
+                 size="5" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Funding Goals</legend>
+        <p>
+          <label>Funding Amount: $</label>
+          <input type = "text"
+                 id = "money"
+                 size="10" />
+        </p>
+        <p>
+          <label>Funding Expiration: </label>
+          <input type = "text"
+                 id = "month_text"
+                 value = "Month"
+                 size="5" /> /
+          <input type = "text"
+                 id = "day_text"
+                 value = "Day"
+                 size="5"/> /
+          <input type = "text"
+                 id = "year_text"
+                 value = "Year"
+                 size="5" />
+        </p>
+      </fieldset>
+      <p>
+          <input type = "submit" />
+      </p>
+    </form>
+  </body>
+</html>
