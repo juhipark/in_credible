@@ -35,7 +35,21 @@
       </div>
     </div>
   </header>
-
+  <main>
+    <div class="container">
+        <div onclick="window.open('sample.html','_blank')" class="item">
+            <article>
+                <h1>Google Chrome</h1>
+                <p>Google Chrome is a free, open-source web browser developed.</p>
+            </article>
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+  </main>
 
 <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
 <script>
@@ -90,7 +104,7 @@ function signInAuthor() {
   //firebase.auth().signInWithPopup(provider);
     firebase.auth().signInWithPopup(provider).then((user)=>{
        
-    window.location.href = "https://www.google.com";
+    window.location.href = "author_submission.html";
     }).catch(function(error) {
 	    console.log(error);
     });
@@ -145,6 +159,6 @@ function initFirebaseAuth() {
 initFirebaseAuth();
 
 </script>
-<h3>HELLO WORLD</h3>
+<h3>Distributed by InCredible Funding</h3>
 </body>
 </html>
