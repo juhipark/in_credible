@@ -1,29 +1,29 @@
-[debug] [2018-11-04T00:12:55.182Z] ----------------------------------------------------------------------
-[debug] [2018-11-04T00:12:55.184Z] Command:       /usr/local/Cellar/node/7.7.1_1/bin/node /usr/local/bin/firebase serve --only hosting
-[debug] [2018-11-04T00:12:55.185Z] CLI Version:   6.0.1
-[debug] [2018-11-04T00:12:55.185Z] Platform:      darwin
-[debug] [2018-11-04T00:12:55.185Z] Node Version:  v7.7.1
-[debug] [2018-11-04T00:12:55.186Z] Time:          Sat Nov 03 2018 17:12:55 GMT-0700 (PDT)
-[debug] [2018-11-04T00:12:55.186Z] ----------------------------------------------------------------------
+[debug] [2018-11-04T05:12:40.158Z] ----------------------------------------------------------------------
+[debug] [2018-11-04T05:12:40.161Z] Command:       /usr/local/Cellar/node/7.7.1_1/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2018-11-04T05:12:40.161Z] CLI Version:   6.0.1
+[debug] [2018-11-04T05:12:40.161Z] Platform:      darwin
+[debug] [2018-11-04T05:12:40.161Z] Node Version:  v7.7.1
+[debug] [2018-11-04T05:12:40.162Z] Time:          Sat Nov 03 2018 22:12:40 GMT-0700 (PDT)
+[debug] [2018-11-04T05:12:40.162Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-11-04T00:12:55.201Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-11-04T00:12:55.201Z] > authorizing via signed-in user
-[debug] [2018-11-04T00:12:55.202Z] [iam] checking project in-credible-953d1 for permissions ["firebase.projects.get"]
-[debug] [2018-11-04T00:12:55.205Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-11-04T00:12:55.205Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2018-11-04T05:12:40.176Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-04T05:12:40.176Z] > authorizing via signed-in user
+[debug] [2018-11-04T05:12:40.176Z] [iam] checking project in-credible-953d1 for permissions ["firebase.projects.get"]
+[debug] [2018-11-04T05:12:40.178Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-04T05:12:40.179Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2018-11-04T00:12:55.414Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-04T00:12:55.430Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-953d1:testIamPermissions  
+[debug] [2018-11-04T05:12:40.328Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-04T05:12:40.342Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-953d1:testIamPermissions  
 
-[debug] [2018-11-04T00:12:55.681Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-04T00:12:55.682Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-953d1  
+[debug] [2018-11-04T05:12:41.163Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-04T05:12:41.165Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/in-credible-953d1  
  
-[debug] [2018-11-04T00:12:55.927Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-04T05:12:41.409Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/juhi/Documents/firebase_sample/in_credible/web-start'...
 [info] 
-[debug] [2018-11-04T00:12:55.931Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/400853116182/clients/_:getWebAppConfig  
+[debug] [2018-11-04T05:12:41.413Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/400853116182/clients/_:getWebAppConfig  
  
-[debug] [2018-11-04T00:12:56.442Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-04T05:12:41.832Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
 [info] ✔  hosting: Local server: http://localhost:5000
