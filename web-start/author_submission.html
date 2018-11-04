@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Article Proposal</h1>
-    <form onsubmit="updateData()">
+    <form>
       <fieldset>
         <legend>Tell us about your proposal!</legend>
         <p>
@@ -72,10 +72,10 @@
                  size="5" />
         </p>
       </fieldset>
-    </form>
-    <p>
-      <input type = "submit" value="Submit" onclick="redirect()"/>
+      <p>
+      <input type = "submit" value="Submit" onclick="return updateData()"/>
     </p>
+    </form>
 
 <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
 <script>
@@ -122,6 +122,7 @@
                 'goalAmount': goalAmount,
                 'expireDate': expireDate
             });
+            redirect();
             return false;
         }
         function redirect(){
